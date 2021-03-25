@@ -7,6 +7,7 @@ import Header from './Header/Header';
 import LandingPage from './LandingPage/LandingPage';
 import Navbar from './Navbar/Navbar';
 import Work from './Work/Work';
+import Skills from './Skills/Skills';
 import './App.scss';
 
 const App = () => {
@@ -15,6 +16,8 @@ const App = () => {
             <Switch>
                 <Route path='/' exact>
                     <LandingPage />
+                    <Skills />
+                    <Work />
                 </Route>
             </Switch>
         </Router>
