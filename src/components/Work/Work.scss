@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.work {
+    &__images {
+        justify-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 7rem;
+    }
+
+    &__image {
+        width: 100%;
+
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+}
