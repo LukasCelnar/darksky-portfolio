@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Kalam-Bold';
+    src: local('Kalam-Bold'), url(../fonts/Kalam/Kalam-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Kalam-Light';
+    src: local('Kalam-Light'), url(../fonts/Kalam/Kalam-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Kalam-Regular';
+    src: local('Kalam-Regular'), url(../fonts/Kalam/Kalam-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'HindMadurai-Light';
+    src: local('HindMadurai-Light'), url(../fonts/HindMadurai/HindMadurai-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'HindMadurai-Medium';
+    src: local('HindMadurai-Medium'), url(../fonts/HindMadurai/HindMadurai-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'HindMadurai-Regular';
+    src: local('HindMadurai-Regular'), url(../fonts/HindMadurai/HindMadurai-Regular.ttf) format('truetype');
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // 1 rem = 10px
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'HindMadurai-Medium';
+    font-size: 2.5rem;
+}
