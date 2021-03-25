@@ -2,6 +2,9 @@
 
 .navbar {
     &__logo {
-
+        color: $color-white;
+        padding: 3rem;
+        font-size: 4rem;
+        font-family: 'Kalam-Bold';
     }
 }
