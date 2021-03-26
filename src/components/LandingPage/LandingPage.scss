@@ -33,6 +33,24 @@
             max-width: 80rem;
             margin: 0 auto;
         }
+
+        @media (max-width: 850px) {
+
+            &-header {
+                font-size: 4rem;
+    
+                &-underline {
+                    background-color: $color-white;
+                    width: 80%;
+                    height: 0.3rem;
+                }
+            }
+
+            &-text {
+                font-size: 2.2rem;
+                max-width: 80%;
+            }
+        }
     }
 
 

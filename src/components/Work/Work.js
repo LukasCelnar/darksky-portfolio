@@ -29,7 +29,7 @@ const Work = () => {
            </div>
 
            <Button iconPath='/images/work/github.png' linkTo='/' text='MORE' color='#fff' />
-           
+
            &nbsp;
         </div>
     );

@@ -22,4 +22,27 @@
         width: 9.3rem;
         cursor: pointer;
     }
+
+    @media (max-width: 700px) {
+        &__images {
+            grid-template-columns: repeat(3, 9.3rem);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        &__image:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        &__image:nth-child(9), &__image:nth-child(8), &__image:nth-child(7) {
+            display: none;
+        }
+        
+        &__images {
+            grid-template-columns: repeat(2, 9.3rem);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+    }
 }

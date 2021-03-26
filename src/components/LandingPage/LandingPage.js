@@ -6,7 +6,7 @@ const LandingPage = () => {
 
     return (
         <div className='landingpage' style={{backgroundImage: 'url(/images/landing-page/bg.png)'}}>
-            <Navbar />
+            
 
            <div className='landingpage__main'>
                 <div className='landingpage__main-header'>
