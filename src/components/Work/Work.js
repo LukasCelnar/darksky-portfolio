@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Button from '../Button/Button';
 import './Work.scss';
 
 const imgNames = [
@@ -27,7 +28,7 @@ const Work = () => {
                 {renderImages()}
            </div>
 
-           GAP
+           <Button text='MORE' color='#000' />
         </div>
     );
 };

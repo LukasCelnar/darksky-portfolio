@@ -33,7 +33,7 @@ const Skills = () => {
             </div>
 
             <Header color='#fff' text='Do you want to know more about my coding experinece?' />
-            <Button linkTo='/' text='GET RESUME / CV' />
+            <Button linkTo='/' text='GET RESUME / CV' color='#fff' />
         </div>
     );
 };
