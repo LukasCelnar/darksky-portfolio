@@ -18,6 +18,7 @@ const App = () => {
                     <LandingPage />
                     <Skills />
                     <Work />
+                    <AboutMe />
                 </Route>
             </Switch>
         </Router>

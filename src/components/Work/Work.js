@@ -22,13 +22,15 @@ const Work = () => {
 
     return (
         <div className='work'>
-           <Header color='#070707' text='Here is my work' />
+           <Header color='#fff' text='Here is my work' />
 
            <div className='work__images'>
                 {renderImages()}
            </div>
 
-           <Button text='MORE' color='#000' />
+           <Button iconPath='/images/work/github.png' linkTo='/' text='MORE' color='#fff' />
+           
+           &nbsp;
         </div>
     );
 };

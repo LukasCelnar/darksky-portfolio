@@ -1,10 +1,27 @@
 @import '../../styles/variables.scss';
 
 .navbar {
+
+    display: flex;
+    align-items: center;
+
     &__logo {
         color: $color-white;
-        padding: 3rem;
-        font-size: 4rem;
+        margin: 3.5rem;
         font-family: 'Kalam-Bold';
+        width: 5rem;
+        cursor: pointer;
+    }
+
+    &__items {
+        margin-left: auto;
+        margin-right: 5rem;
+    }
+
+    &__item {
+        color: $color-white;
+        margin: 0 3rem;
+        text-decoration: none;
+        font-size: 2.2rem;
     }
 }

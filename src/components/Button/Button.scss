@@ -1,17 +1,26 @@
 @import '../../styles/variables.scss';
 
 .button {
-    padding: 3rem 0;
     width: 30rem;
-    margin: 0 auto;
     cursor: pointer;
 
-    
-    &__text {  
-        border: 2px solid;
-        text-align: center;
-        width: 100%;
-        padding: 1rem;
-        margin: 0 auto;
+    border: 2px solid;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        width: 4.1rem;
+        position: absolute;
+        left: 5%;
     }
+
+    &__text {  
+    }
+
 }

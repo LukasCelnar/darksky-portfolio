@@ -1,21 +1,24 @@
 @import '../../styles/variables.scss';
 
 .work {
+    background-color: $color-lighter-black;
+
     &__images {
         justify-items: center;
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(3, 30rem);
+        grid-template-columns: repeat(3, 40rem);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 7rem;
+        padding: 2rem 0;
     }
 
     &__image {
         width: 100%;
 
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 
 
         border-radius: 2rem;
