@@ -4,7 +4,7 @@ import './AboutMe.scss';
 
 const AboutMe = () => {
     return (
-        <div className='aboutme'>
+        <div id='about' className='aboutme'>
            <div className='aboutme__header aboutme__first-header'>Do you want to know more about me ?</div>
            <div className='aboutme__content'>
                 Hey, Im Lukas Celnar, im 18 years old cybersecurity student.

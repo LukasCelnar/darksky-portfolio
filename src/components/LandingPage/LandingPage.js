@@ -1,12 +1,14 @@
 import React from 'react';
 import './LandingPage.scss';
+import history from '../../history';
+import { HashLink as Link } from 'react-router-hash-link';
 import Navbar from '../Navbar/Navbar';
 
-const LandingPage = () => {
+const LandingPage = ({ scrollWidthOffsetProp }) => {
 
     return (
-        <div className='landingpage' style={{backgroundImage: 'url(/images/landing-page/bg.png)'}}>
-            <Navbar />
+        <div id='main' className='landingpage' style={{backgroundImage: 'url(/images/landing-page/bg.png)'}}>
+            <Navbar scrollWidthOffsetProp={scrollWidthOffsetProp} />
 
            <div className='landingpage__main'>
                 <div className='landingpage__main-header'>
@@ -19,7 +21,7 @@ const LandingPage = () => {
                 </div>
            </div>
 
-            <img className='landingpage__scroll' src='/images/landing-page/scroll.png' alt='scroll' />
+            <Link to='/#skills' scroll={scrollWidthOffsetProp}><img className='landingpage__scroll' src='/images/landing-page/scroll.png' alt='scroll' /></Link>
         </div>
     );
 };

@@ -35,14 +35,14 @@ const Work = () => {
     };
 
     return (
-        <div className='work'>
+        <div id='work' className='work'>
            <Header color='#fff' text='Here is my work' />
 
            <div className='work__images'>
                 {renderImages()}
            </div>
 
-           <Button iconPath='/images/work/github-white.png' linkTo='/' text='MORE' color='#fff' hoverIconPath='/images/work/github-black.png' />
+           <Button iconPath='/images/work/github-white.png' linkTo='https://github.com/LukasCelnar' text='MORE' color='#fff' hoverIconPath='/images/work/github-black.png' />
 
            &nbsp;
         </div>

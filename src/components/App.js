@@ -8,14 +8,20 @@ import LandingPage from './LandingPage/LandingPage';
 import Navbar from './Navbar/Navbar';
 import Work from './Work/Work';
 import Skills from './Skills/Skills';
+import history from '../history';
 import './App.scss';
 
 const App = () => {
+    const scrollWidthOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({ top: yCoordinate, behavior: 'smooth' }); 
+    }
+
     return (
-        <Router>
+        <Router history={history}>
             <Switch>
                 <Route path='/' exact>
-                    <LandingPage />
+                    <LandingPage scrollWidthOffsetProp={scrollWidthOffset} />
                     <Skills />
                     <Work />
                     <AboutMe />
