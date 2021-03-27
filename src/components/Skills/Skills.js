@@ -4,16 +4,16 @@ import Button from '../Button/Button';
 import './Skills.scss';
 
 const imgNames = [
+    'html',
+    'css',
+    'javascript',
+    'python',
+    'node',
     'react',
-    'react',
-    'react',
-    'react',
-    'react',
-    'react',
-    'react',
-    'react',
-    'react',
-    'react'
+    'redux',
+    'mysql',
+    'mongo',
+    'sass'
 ]
 
 const Skills = () => {
