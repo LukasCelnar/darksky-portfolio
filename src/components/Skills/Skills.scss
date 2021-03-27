@@ -21,6 +21,11 @@
     &__image {
         width: 9.3rem;
         cursor: pointer;
+        transition: 0.2s ease-out;
+    }
+
+    &__image:hover {
+        transform: scale(1.07);
     }
 
     @media (max-width: 700px) {

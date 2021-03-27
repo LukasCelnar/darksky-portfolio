@@ -25,11 +25,145 @@
         cursor: pointer;
     }
 
+    &__image-container {
+        position: relative;
+
+
+    }
+
+    &__image-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: calc(100% - 4.26%);
+        border-radius: 2rem;
+
+        display: none;
+        animation: show-work-img 0.5s forwards;
+
+        @keyframes show-work-img {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__image-container:hover {
+        .work__image-hover {
+            background-color: rgba($color-lighter-black, 0.6);
+            display: block;
+            backdrop-filter: blur(4px);
+        }
+        
+        .work__image {
+            
+        }
+    }
+
+    &__image-hover {
+
+        &-tech {
+            width: 10%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10%;
+        }
+
+        &-header {
+            text-align: center;
+            color: $color-white;
+            font-size: 90%;
+            margin: 2rem 0 1rem 0;
+
+            @media (max-width: 900px) {
+                font-size: 80%;
+                margin: 1.2rem 0 1rem 0;
+            }
+
+            @media (max-width: 700px) {
+                font-size: 90%;
+                margin: 1rem 0 1rem 0;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 70%;
+            }
+
+            @media (max-width: 300px) {
+                font-size: 55%;
+            }
+        }
+
+        &-content {
+            color: $color-white;
+            text-align: center;
+            font-size: 70%;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (max-width: 900px) {
+                font-size: 60%;
+                width: 85%;
+            }
+
+            @media (max-width: 700px) {
+                font-size: 70%;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 50%;
+            }
+
+            @media (max-width: 300px) {
+                width: 90%;
+                font-size: 45%;
+            }
+        }
+
+        &-links {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+
+            & > a {
+                width: 8%;
+                margin: 0 1rem;
+
+                @media (max-width: 900px) {
+                    width: 7%;
+                }
+
+                @media (max-width: 700px) {
+                    width: 8%;
+                }
+            }
+        }
+
+        &-link {
+            width: 100%;
+        }
+    }
+
     @media (max-width: 1450px) {
         &__images {
             grid-template-columns: repeat(3, 30rem);
             grid-template-rows: repeat(2, 1fr);
             grid-gap: 5rem;
+        }
+
+        &__image-hover {
+            &-tech {
+                display: none;
+            }
         }
     }
 

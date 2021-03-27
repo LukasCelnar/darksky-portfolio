@@ -20,7 +20,7 @@ const Skills = () => {
 
     const renderImages = () => {
         return imgNames.map(imgName => {
-            return <img className='skills__image' src={`/images/skills/${imgName}.png`} alt={imgName} />
+            return <img className='skills__image' src={`/images/tech-icons/${imgName}.png`} alt={imgName} />
         });
     };
 

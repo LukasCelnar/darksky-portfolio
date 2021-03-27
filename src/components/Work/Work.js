@@ -3,20 +3,34 @@ import Header from '../Header/Header';
 import Button from '../Button/Button';
 import './Work.scss';
 
-const imgNames = [
-    'dummy-img',
-    'dummy-img',
-    'dummy-img',
-    'dummy-img',
-    'dummy-img',
-    'dummy-img'
+const works = [
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'}
 ]
 
 const Work = () => {
 
     const renderImages = () => {
-        return imgNames.map(imgName => {
-            return <img className='work__image' src={`/images/work/${imgName}.png`} alt={imgName} />
+        return works.map(work => {
+            return (
+                <div className='work__image-container'>
+                    <img className='work__image' src={`/images/work/${work.imgName}.png`} alt={work.imgName} />
+                    <div className='work__image-hover'>
+                        <img className='work__image-hover-tech' src={`/images/tech-icons/${work.techImgName}.png`} alt={work.techImgName} />
+                        <div className='work__image-hover-header'>{work.heading}</div>
+                        <div className='work__image-hover-content'>{work.content}</div>
+                        <div className='work__image-hover-links'>
+                            <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/github-white.png' /></a>
+                            <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/live-white.png'/></a>
+                        </div>
+                    </div>
+                </div>
+            )
+            
         })
     };
 
@@ -28,7 +42,7 @@ const Work = () => {
                 {renderImages()}
            </div>
 
-           <Button iconPath='/images/work/github.png' linkTo='/' text='MORE' color='#fff' />
+           <Button iconPath='/images/work/github-white.png' linkTo='/' text='MORE' color='#fff' hoverIconPath='/images/work/github-black.png' />
 
            &nbsp;
         </div>
