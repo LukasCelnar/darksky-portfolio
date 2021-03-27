@@ -50,6 +50,7 @@ html {
 body {
     font-family: 'HindMadurai-Medium';
     font-size: 2.5rem;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         width: 8px;
