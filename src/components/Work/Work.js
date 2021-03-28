@@ -5,11 +5,11 @@ import './Work.scss';
 
 const works = [
     { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
-    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
-    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
-    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
-    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
-    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'}
+    { imgName: 'traplifetattoo', techImgName: 'react', heading: 'Traplifetattoo', content: 'Website for Czech tattoo shop ', github: 'https://github.com/LukasCelnar/traplifetattoo', live: 'https://traplifetattoo.netlify.app/'},
+    { imgName: 'linux-terminal', techImgName: 'react', heading: 'Linux Terminal', content: 'Website that simulates most used reallife linux terminal commands', github: 'https://github.com/LukasCelnar/LinuxTerminal', live: 'https://linux-terminal.netlify.app/'},
+    { imgName: 'malaria-detection', techImgName: 'python', heading: 'Malaria Detection', content: 'AI that predicts if human cell is parasitised by malaria or not', live: ''},
+    { imgName: 'portfolio-template', techImgName: 'css', heading: 'Portfolio Template', content: 'Simplistic template for programming portfolio', github: 'https://github.com/LukasCelnar/PortfolioTemplate', live: 'https://lukascelnar.github.io/PortfolioTemplate/'},
+    { imgName: 'caesar-cipher', techImgName: 'python', heading: 'Caesar Cipher', content: 'Encryption algorithm that converts text to unreable string', github: 'https://github.com/LukasCelnar/CaesarCipher', live: ''},
 ]
 
 const Work = () => {
@@ -25,7 +25,7 @@ const Work = () => {
                         <div className='work__image-hover-content'>{work.content}</div>
                         <div className='work__image-hover-links'>
                             <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/github-white.png' /></a>
-                            <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/live-white.png'/></a>
+                            <a href="https://google.com" style={work.live ? {} : {display: 'none'}}><img className='work__image-hover-link' src='/images/work/live-white.png'/></a>
                         </div>
                     </div>
                 </div>
