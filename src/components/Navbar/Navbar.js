@@ -11,7 +11,7 @@ const Navbar = ({ scrollWidthOffsetProp }) => {
 
     return (
         <div className='navbar'>
-            <img className='navbar__logo' src='/images/navbar/lc-logo.png' />
+            <img className='navbar__logo' src='/images/navbar/lc-logo.png' alt='logo'/>
             <div className='navbar__items'>
                 <Link scroll={scrollWidthOffsetProp} to='/#main' className='navbar__item'>Home</Link>
                 <Link scroll={scrollWidthOffsetProp} to='/#skills' className='navbar__item'>Skills</Link>

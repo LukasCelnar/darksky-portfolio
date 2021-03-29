@@ -1,6 +1,5 @@
 import React from 'react';
 import './LandingPage.scss';
-import history from '../../history';
 import { HashLink as Link } from 'react-router-hash-link';
 import Navbar from '../Navbar/Navbar';
 

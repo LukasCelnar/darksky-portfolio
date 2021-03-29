@@ -34,9 +34,9 @@ const Contact = () => {
                 </div>
 
                 <div className='contact__others-socials'>
-                    <a href=''><img src='/images/contact/fb.png' alt='fb' /></a>
-                    <a href=''><img src='/images/contact/ig.png' alt='ig' /></a>
-                    <a href=''><img src='/images/contact/linkedin.png' alt='linkedin' /></a>
+                    <a href='https://www.facebook.com/profile.php?id=100008529007419'><img src='/images/contact/fb.png' alt='fb' /></a>
+                    <a href='https://www.instagram.com/lukas.celnar/'><img src='/images/contact/ig.png' alt='ig' /></a>
+                    <a href='https://www.linkedin.com/in/luk%C3%A1%C5%A1-celnar-3362491a6/'><img src='/images/contact/linkedin.png' alt='linkedin' /></a>
                 </div>
 
             </div>

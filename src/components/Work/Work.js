@@ -24,8 +24,8 @@ const Work = () => {
                         <div className='work__image-hover-header'>{work.heading}</div>
                         <div className='work__image-hover-content'>{work.content}</div>
                         <div className='work__image-hover-links'>
-                            <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/github-white.png' /></a>
-                            <a href="https://google.com" style={work.live ? {} : {display: 'none'}}><img className='work__image-hover-link' src='/images/work/live-white.png'/></a>
+                            <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/github-white.png' alt='github-logo' /></a>
+                            <a href="https://google.com" style={work.live ? {} : {display: 'none'}}><img className='work__image-hover-link' src='/images/work/live-white.png' alt='live-logo'/></a>
                         </div>
                     </div>
                 </div>
