@@ -1,6 +1,27 @@
 @import '../../styles/variables.scss';
 
 .contact {
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__header {
+        letter-spacing: 0.7rem;
+        font-size: 3rem;
+        margin-bottom: 6rem;
+
+        @media (max-height: 850px) {
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+
     &__form {
 
         &-inputs {
@@ -18,11 +39,21 @@
             color: #888;
             padding: 1rem 0.6rem;
             margin-bottom: 4rem;
+
+            @media (max-width: 700px) {
+                margin-bottom: 1rem;
+            }
+
+
         }
 
         &-name, &-email {
             width: 45%;
-            font-size: 1.4rem;
+            font-size: 2.4rem;
+
+            @media (max-width: 700px) {
+                font-size: 60%;
+            }
         }
 
         &-name {
@@ -33,8 +64,19 @@
         }
         
         &-message {
-            width: 70%;
-            font-size: 1.8rem;
+            font-size: 3.2rem;
+            max-width: 70%;
+            min-width: 70%;
+            height: 15rem;
+
+            @media (max-height: 850px) {
+                height: 4.9rem;
+            }
+
+            @media (max-width: 700px) {
+                font-size: 80%
+            }
+            
         }
 
         &-submit {
@@ -45,10 +87,87 @@
             border-radius: 0.8rem;
             text-transform: uppercase;
             font-size: 1.4rem;
+            cursor: pointer;
 
             &:hover {
                 background: #70a1ff;
                 color: $color-white;
+            }
+        }
+    }
+
+    &__others {
+
+        &-header {
+            font-size: 2.5rem;
+            margin: 2rem 0;
+
+            @media (max-width: 700px) {
+                font-size: 60%;
+            }
+        }
+
+        &-container {
+            display: flex;
+            width: 70%;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 3rem;
+
+            @media (max-width: 700px) {
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+
+        &-icon-container {
+            width: 50%;
+            text-align: center;
+            font-size: 2rem;
+            align-items: center;
+
+            @media (max-width: 700px) {
+                font-size: 60%;
+                margin: 1rem auto;
+                width: 100%;
+            }
+        }
+
+        &-icon {
+            height: 3.5rem;
+
+            @media (max-width: 700px) {
+                height: 2rem;
+            }
+
+        }
+
+        &-line {
+            background-color: $color-white;
+            width: 2px;
+            height: 8rem;
+
+            @media (max-width: 700px) {
+                display: none;
+            }
+        }
+
+        &-socials {
+            display: flex;
+            justify-content: center;
+            
+            & > a {
+                width: 5rem;
+                margin: 4rem 2rem 0 2rem;
+
+                @media (max-width: 700px) {
+                    width: 3rem;
+                    margin: 0 2rem;
+                }
+
+                & > img {
+                    width: 100%;
+                }
             }
         }
     }

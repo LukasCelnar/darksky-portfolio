@@ -28,6 +28,14 @@
         transform: scale(1.07);
     }
 
+    &__pdf-error {
+        width: 10rem;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     @media (max-width: 700px) {
         &__images {
             grid-template-columns: repeat(3, 9.3rem);
