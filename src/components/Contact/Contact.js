@@ -1,16 +1,32 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './Contact.scss';
 
 const Contact = () => {
+    const onFormSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'darksky-portfolio', e.target, process.env.REACT_APP_EMAILJS_USERID)
+            .then(result => {
+                if (result.status === 200) {
+                    console.log('email sent successfully')
+                }
+            })
+            .catch(err => console.log(err))
+
+        e.target.reset();
+
+    }
+
     return (
         <div className='contact'>
             <div className='contact__header'>GET IN TOUCH WITH ME</div>
-            <form className='contact__form-form'>
+            <form onSubmit={(e) => onFormSubmit(e)} className='contact__form-form' name='contact'>
                 <div className='contact__form-inputs'>
-                    <input className='contact__form-name' name='name' placeholder='Your Name' type='text'/>
-                    <input className='contact__form-email' name='email' placeholder='Your Email' type='email' />
+                    <input required className='contact__form-name' name='name' placeholder='Your Name' type='text'/>
+                    <input required className='contact__form-email' name='email' placeholder='Your Email' type='email' />
                 </div>
-                <textarea className='contact__form-message' name='message' placeholder='Message' rows='1'>
+                <textarea required className='contact__form-message' name='message' placeholder='Message' rows='1'>
 
                 </textarea>
                 <br />

@@ -15,9 +15,9 @@ const works = [
 const Work = () => {
 
     const renderImages = () => {
-        return works.map(work => {
+        return works.map((work, i) => {
             return (
-                <div className='work__image-container'>
+                <div key={i} className='work__image-container'>
                     <img className='work__image' src={`/images/work/${work.imgName}.png`} alt={work.imgName} />
                     <div className='work__image-hover'>
                         <img className='work__image-hover-tech' src={`/images/tech-icons/${work.techImgName}.png`} alt={work.techImgName} />
