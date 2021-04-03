@@ -15,7 +15,7 @@ const LandingPage = ({ scrollWidthOffsetProp }) => {
                 </div>
                 <div className='landingpage__main-header-underline'></div>
                 <div className='landingpage__main-text'>
-                    Im passionate about coding and building software that can do amazing things.
+                    I’m passionate about coding and building software that can do amazing things.
                     My life goal is to be part of something big.
                 </div>
            </div>
