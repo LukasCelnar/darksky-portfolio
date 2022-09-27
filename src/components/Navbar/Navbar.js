@@ -16,7 +16,6 @@ const Navbar = ({ scrollWidthOffsetProp }) => {
                 <Link scroll={scrollWidthOffsetProp} to='/#main' className='navbar__item'>Home</Link>
                 <Link scroll={scrollWidthOffsetProp} to='/#skills' className='navbar__item'>Skills</Link>
                 <Link scroll={scrollWidthOffsetProp} to='/#work' className='navbar__item'>Work</Link>
-                <Link scroll={scrollWidthOffsetProp} to='/#about' className='navbar__item'>About</Link>
             </div>
             <div className='navbar__hamburger' onClick={() => onHamburgerMenuClick()}>
                 <div className='navbar__hamburger-bar'></div>
@@ -28,7 +27,6 @@ const Navbar = ({ scrollWidthOffsetProp }) => {
                 <div className='navbar__hamburger-item'>Home</div>
                 <div className='navbar__hamburger-item'>Skills</div>
                 <div className='navbar__hamburger-item'>Work</div>
-                <div className='navbar__hamburger-item'>About</div>
             </div>
         </div>
     );

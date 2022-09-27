@@ -4,12 +4,12 @@ import Button from '../Button/Button';
 import './Work.scss';
 
 const works = [
-    { imgName: 'dummy-img', techImgName: 'react', heading: 'Apartment Presenation', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
+    { imgName: 'dummy-img', techImgName: 'react', heading: 'MS-invest', content: 'Website for Czech company named ms-invest', github: 'https://github.com/LukasCelnar/ApartmentPresentationV2', live: 'http://www.palac-trnita.cz/'},
     { imgName: 'traplifetattoo', techImgName: 'react', heading: 'Traplifetattoo', content: 'Website for Czech tattoo shop ', github: 'https://github.com/LukasCelnar/traplifetattoo', live: 'https://traplifetattoo.netlify.app/'},
     { imgName: 'linux-terminal', techImgName: 'react', heading: 'Linux Terminal', content: 'Website that simulates most used reallife linux terminal commands', github: 'https://github.com/LukasCelnar/LinuxTerminal', live: 'https://linux-terminal.netlify.app/'},
-    { imgName: 'malaria-detection', techImgName: 'python', heading: 'Malaria Detection', content: 'AI that predicts if human cell is parasitised by malaria or not', live: ''},
-    { imgName: 'portfolio-template', techImgName: 'css', heading: 'Portfolio Template', content: 'Simplistic template for programming portfolio', github: 'https://github.com/LukasCelnar/PortfolioTemplate', live: 'https://lukascelnar.github.io/PortfolioTemplate/'},
-    { imgName: 'caesar-cipher', techImgName: 'python', heading: 'Caesar Cipher', content: 'Encryption algorithm that converts text to unreable string', github: 'https://github.com/LukasCelnar/CaesarCipher', live: ''},
+    { imgName: 'malaria-detection', techImgName: 'python', heading: 'Malaria Detection', content: 'AI that predicts if human cell is parasitised by malaria or not', github:'https://github.com/LukasCelnar/MalariaDetection' ,live: ''},
+    { imgName: 'wbc', techImgName: 'python', heading: 'WBC Detection', content: 'AI that detects type of white blood cell with 95% accuracy', github: 'https://github.com/LukasCelnar/wbc-detection', live: ''},
+    { imgName: 'greenify', techImgName: 'javascript', heading: 'Greenify', content: 'Google maps extension that calculates emissions (you can find it released on chrome store)', github: '', live: ''},
 ]
 
 const Work = () => {
@@ -24,7 +24,7 @@ const Work = () => {
                         <div className='work__image-hover-header'>{work.heading}</div>
                         <div className='work__image-hover-content'>{work.content}</div>
                         <div className='work__image-hover-links'>
-                            <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/github-white.png' alt='github-logo' /></a>
+                            {work.github ? <a href="https://google.com"><img className='work__image-hover-link' src='/images/work/github-white.png' alt='github-logo' /></a> : null}
                             <a href="https://google.com" style={work.live ? {} : {display: 'none'}}><img className='work__image-hover-link' src='/images/work/live-white.png' alt='live-logo'/></a>
                         </div>
                     </div>

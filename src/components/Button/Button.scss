@@ -4,7 +4,7 @@
     width: 30rem;
     cursor: pointer;
     transition: 0.2s ease-in;
-
+    color: white;
     text-decoration: none;
 
     border: 2px solid;
@@ -37,7 +37,7 @@
 
     &:hover {
         background-color: $color-white;
-        
+        color: black;
         .button__text { color: $color-lighter-black; }
         .button__icon { display: none }
         .button__icon-hover { display: block }
