@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../Header/Header';
-import Button from '../Button/Button';
-import Modal from '../Modal/Modal';
 import './Skills.scss';
 
 const imgNames = [
@@ -18,11 +16,6 @@ const imgNames = [
 ]
 
 const Skills = () => {
-    const [showResumeModal, setShowResumeModal] = useState(false)
-
-    const onResumeButtonClick = () => {
-        setShowResumeModal(true)
-    }
 
     const renderImages = () => {
         return imgNames.map((imgName, i) => {
