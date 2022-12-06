@@ -9,7 +9,7 @@ const works = [
     { imgName: 'linux-terminal', techImgName: 'react', heading: 'Linux Terminal', content: 'Website that simulates most used reallife linux terminal commands', github: 'https://github.com/LukasCelnar/LinuxTerminal', live: 'https://linux-terminal.netlify.app/'},
     { imgName: 'malaria-detection', techImgName: 'python', heading: 'Malaria Detection', content: 'AI that predicts if human cell is parasitised by malaria or not', github:'https://github.com/LukasCelnar/MalariaDetection' ,live: ''},
     { imgName: 'wbc', techImgName: 'python', heading: 'WBC Detection', content: 'AI that detects type of white blood cell with 95% accuracy', github: 'https://github.com/LukasCelnar/wbc-detection', live: ''},
-    { imgName: 'greenify', techImgName: 'javascript', heading: 'Greenify', content: 'Google maps extension that calculates emissions (you can find it released on chrome store)', github: '', live: ''},
+    { imgName: 'greenify', techImgName: 'javascript', heading: 'Greenify', content: 'Google maps extension that calculates emissions of your route', github: '', live: 'https://chrome.google.com/webstore/detail/greenify/abkdcchpgcnpeliambllmncflldaghop'},
 ]
 
 const Work = () => {
